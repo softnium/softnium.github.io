@@ -1,191 +1,208 @@
-    <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="utf-8">
-            <title>Softnium</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!--Bootstrap 4-->
-            <link rel="stylesheet" href="css/bootstrap.min.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-            <!--icons-->
-            <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-            <link rel="stylesheet" href="js/countdown/jquery.countdown.css" />
-            <style>
-                /* Make social media icons black */
-                .social-icons {
-                    margin-top: 20px;
-                }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Softnium - Smart CRM Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" data-border-radius="small"></script>
+</head>
+<body class="font-[Inter] bg-gray-50">
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <nav class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <img class="h-8 w-auto" src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="Softnium">                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-custom font-medium">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-custom font-medium">Features</a>
+                    <a href="#" class="text-gray-700 hover:text-custom font-medium">Reviews</a>
+                    <a href="#" class="text-gray-700 hover:text-custom font-medium">About</a>
+                    <a href="#" class="text-gray-700 hover:text-custom font-medium">Contact</a>
+                    <button class="bg-custom text-white px-6 py-2 !rounded-button font-medium hover:bg-blue-700 transition-colors">Get Started</button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-                .social-icons a {
-                    display: inline-block;
-                    margin: 0 25px; /* Reduce spacing */
-                    font-size: 20; /* Smaller icon size */
-                    color: black; /* Keep them black */
-                }
+    <main class="pt-16">
+        <section class="bg-white">            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">Empower Your Business with Smart CRM Solutions</h1>                        <p class="mt-6 text-xl text-gray-600">Streamline your operations, boost client engagement, and grow your business with our intelligent CRM platform designed for fitness and wellness professionals.</p>                        <button class="mt-8 bg-custom text-white px-8 py-3 !rounded-button font-medium hover:bg-blue-700 transition-colors">Request Demo</button>
+                    </div>
+                    <div>
+                        <img src="photo.png" class="w-full" alt="CRM Dashboard">                    </div>
+                </div>
+            </div>
+        </section>
 
-                .social-icons a em {
-                    color: black !important; /* Ensure black color */
-                    font-size: 40px; /* Adjust icon size */
-                }
 
+        <section id="features" class="py-24">            <div class="max-w-8xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Powerful Features for Your Business</h2>
+                <p class="text-xl text-gray-600">Everything you need to manage your fitness business efficiently</p>                </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 bg-white rounded-lg border border-gray-100 hover:shadow-lg transition-shadow">                        <div class="w-14 h-14 bg-custom/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-2xl text-custom"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Client Management</h3>
+                    <p class="text-gray-600">Efficiently manage member profiles, track attendance, and monitor progress with our intuitive interface.</p>
+                </div>                    <div class="p-8 bg-white rounded-lg border border-gray-100 hover:shadow-lg transition-shadow">
+                    <div class="w-14 h-14 bg-custom/10 rounded-lg flex items-center justify-center mb-6">                            <i class="fas fa-credit-card text-2xl text-custom"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Payment Tracking</h3>
+                    <p class="text-gray-600">Automated billing, subscription management, and payment processing for hassle-free transactions.</p>                    </div>
+                <div class="p-8 bg-white rounded-lg border border-gray-100 hover:shadow-lg transition-shadow">                        <div class="w-14 h-14 bg-custom/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-2xl text-custom"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Smart Automation</h3>
+                    <p class="text-gray-600">Automate routine tasks, notifications, and follow-ups to save time and improve efficiency.</p>
+                </div>
+            </div>            </div>
+        </section>
 
-            </style>
-        </head>
-        <body>
-            <!--hero section-->
-            <section class="bg-white hero p-0">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-5 bg-light text-center col-fixed">
-                            <h1 class="pt-4 h2"><span class="text-green">Softnium.</span></h1>
-                            <h3>Payment Tracking System</h3>
-                            <p class="mt-4">
-                                We build beautiful things for <br/>creative people.
-                            </p>
-                            <div class="launch-text">We're launching soon.</div>
-                            <ul id="timer">
-                                <li><span class="days">00</span><p class="days_text">Days</p></li>
-                                <li class="seperator">:</li>
-                                <li><span class="hours">00</span><p class="hours_text">Hours</p></li>
-                                <li class="seperator">:</li>
-                                <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
-                                <li class="seperator">:</li>
-                                <li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
-                            </ul>
-
-                            <!-- Social Icons -->
-                            <div class="social-icons mt-4">
-                                <a href="https://www.linkedin.com/company/softnium" target="_blank">
-                                    <em class="ion-social-linkedin icon-md"></em>
-                                </a>
-                                <a href="https://www.instagram.com/softnium" target="_blank">
-                                    <em class="ion-social-instagram icon-md"></em>
-                                </a>
-                                <a href="tel:+919137886169">
-                                    <em class="ion-ios-telephone icon-md"></em>
-                                </a>
-                            </div>
-
+        <section class="bg-white py-20">            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">What Our Clients Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-lg">                        <div class="text-custom mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
-
-                        
-
-
-                        <div class="col-sm-7 offset-sm-5 px-0 py-5">
-                            <!--Why This Domain-->
-                            <section class="pt-4">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-sm-8 mx-auto text-center">
-                                            <h2 class="text-primary pb-3">About Us</h2>
-                                            <p class="text-muted">
-                                                We are building a secure and efficient CRM for businesses to track client payment details seamlessly. With robust automation, our system ensures smooth operations and data security at every step.                                        </p>
-                                        </div>
-                                    </div>
-                                    <div class="row d-md-flex mt-4">
-                                        <div class="col-sm-4 mt-2 text-center">
-                                            <p><em class="ion-iphone icon-md text-primary"></em></p>
-                                            <h4>CRM App</h4>
-                                            <p class="text-muted">An app to track and manage client due payments seamlessly.</p>
-                                        </div>
-                                        <div class="col-sm-4 mt-2 text-center">
-                                            <p><em class="ion-ios-photos-outline icon-md text-primary"></em></p>
-                                            <h4>Data Security</h4>
-                                            <p class="text-muted">Your data stays secure with advanced encryption and real-time protection.</p>
-                                        </div>
-                                        <div class="col-sm-4 mt-2 text-center">
-                                            <p><em class="ion-help-buoy icon-md text-primary"></em></p>
-                                            <h4>24/7 Support</h4>
-                                            <p class="text-muted">Round-the-clock assistance to keep your business running smoothly.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <!--team-->
-                            <!-- <section id="team">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-8 mx-auto text-center">
-                                            <h2 class="text-primary pb-3">Our Team</h2>
-                                            <p class="text-muted">
-                                                We're a team of three people.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="row d-md-flex mt-4 text-center">
-                                        <div class="col-sm-4 mt-2 wow fadeInLeft">
-                                            <div class="card border-none">
-                                                <div class="card-body">
-                                                    <img src="img/team-1.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
-                                                    <h5 class="card-title pt-4">John Deo</h5>
-                                                    <p class="card-text text-muted">App Designer</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4 mt-2 wow fadeIn">
-                                            <div class="card border-none">
-                                                <div class="card-body">
-                                                    <img src="img/team-2.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
-                                                    <h5 class="card-title pt-4">Brandon Lee</h5>
-                                                    <p class="card-text text-muted">Ionic Developer</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4 mt-2 wow fadeInRight">
-                                            <div class="card border-none">
-                                                <div class="card-body">
-                                                    <img src="img/team-3.jpg" alt="Male" class="img-team img-fluid rounded-circle"/>
-                                                    <h5 class="card-title pt-4">Inza Fererri</h5>
-                                                    <p class="card-text text-muted">Android Developer</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section> -->
-
-                            <!--contact-->
-                            <section class="p-0" id="contact">
-                                <div class="container">
-                                    <div class="row d-md-flex text-primary text-center">
-                                        <div class="col-sm-4 p-5">
-                                            <p><em class="ion-ios-telephone-outline icon-md"></em></p>
-                                            <h5>+91 91378 86169</h5>
-                                        </div>
-                                        <div class="col-sm-4 p-5">
-                                            <p><em class="ion-ios-email-outline icon-md"></em></p>
-                                            <h5>softnium@gmail.com</h5>
-                                        </div>
-                                        <div class="col-sm-4 p-5">
-                                            <p><em class="ion-ios-location-outline icon-md"></em></p>
-                                            <h5>Mumbai, India</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <!--footer-->
-                            <section class="mt-2">
-                                <div class="container">
-                                    <div class="row mr-5 ml-5">
-                                        <div class="col-sm-12">
-                                            <p class="text-muted text-center">
-                                                &copy; 2025 Softnium - All Rights Reserved
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
+                        <p class="text-gray-600 mb-6">"Softnium has transformed how we manage our gym. The automation features save us countless hours every week."</p>                        <div class="flex items-center">
+                            <img src="tejas.png" class="w-12 h-12 rounded-full mr-4" alt="Karan Singh">                            <div>
+                                <h4 class="font-semibold">Karan Singh</h4>
+                                <p class="text-sm text-gray-500">FitLife Gym Owner</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                    <div class="bg-gray-50 p-8 rounded-lg">                        <div class="text-custom mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-6">"The payment tracking system is seamless. I can focus on teaching yoga instead of chasing payments."</p>                        <div class="flex items-center">
+                            <img src="ayushi.jpg" class="w-12 h-12 rounded-full mr-4" alt="Ayushi Sharma">                            <div>
+                                <h4 class="font-semibold">Ayushi Sharma</h4>
+                                <p class="text-sm text-gray-500">Yoga Studio Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg">                        <div class="text-custom mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-6">"Client management has never been easier. The automated reminders have significantly reduced no-shows."</p>                        <div class="flex items-center">
+                            <img src="rohan.png" class="w-12 h-12 rounded-full mr-4" alt="Tejas Rane">                            <div>
+                                <h4 class="font-semibold">Tejas Rane</h4>
+                                <p class="text-sm text-gray-500">Personal Training Studio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>            </div>
+        </section>
 
-            <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
-            <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-            <script src="js/countdown/jquery.countdown.min.js"></script>
-            <script src="js/scripts.js"></script>
-        </body>
-    </html>
+        <section class="bg-gray-50 py-20">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">About Softnium</h2>
+                        <p class="text-gray-600 mb-6">We're passionate about helping fitness and wellness businesses thrive through innovative technology solutions. Our team combines deep industry expertise with cutting-edge software development to deliver a CRM that truly understands your needs.</p>                        <p class="text-gray-600">Since 2015, we've been empowering businesses to focus on what they do best - helping their clients achieve their fitness and wellness goals.</p>                    </div>
+                    <div>
+                        <img src="photo2.png" class="w-full rounded-lg" alt="Softnium Team">                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-gray-50">            <div class="max-w-8xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>                        <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+                    <p class="text-lg text-gray-600 mb-8">Have questions about our CRM solution? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                    <div class="space-y-6">                            <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-custom/10 rounded-lg flex items-center justify-center">                                    <i class="fas fa-envelope text-custom"></i>
+                            </div>
+                            <div>                                    <p class="font-medium">Email</p>
+                                <p class="text-gray-600">softnium@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">                                <div class="w-12 h-12 bg-custom/10 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-phone text-custom"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Phone</p>
+                                <p class="text-gray-600">+91 9137886169</p>
+                            </div>                            </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-custom/10 rounded-lg flex items-center justify-center">                                    <i class="fas fa-location-dot text-custom"></i>
+                            </div>
+                            <div>                                    <p class="font-medium">Location</p>
+                                <p class="text-gray-600">Mumbai, India</p>
+                            </div>
+                        </div>                        </div>
+                </div>
+                <div>
+                    <form class="bg-white p-8 rounded-lg border border-gray-100">                            <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input type="text" class="w-full border-gray-300 !rounded-button focus:border-custom focus:ring-custom" placeholder="Your name">                                </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full border-gray-300 !rounded-button focus:border-custom focus:ring-custom" placeholder="your@email.com">                                </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                <textarea rows="4" class="w-full border-gray-300 !rounded-button focus:border-custom focus:ring-custom" placeholder="Your message"></textarea>
+                            </div>
+                            <button type="submit" class="w-full !rounded-button bg-custom text-white py-3 font-medium hover:bg-custom/90">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>            </div>
+    </section>
+</main>
+
+<footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-8xl mx-auto px-6">            <div class="grid md:grid-cols-4 gap-8">
+            <div>
+                <div class="flex items-center space-x-3 mb-6">                        <img src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="Softnium" class="h-8 brightness-0 invert">                        <span class="text-lg font-semibold">Softnium</span>
+                </div>
+                <p class="text-gray-400">Empowering fitness businesses with smart CRM solutions.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-3 text-gray-400">
+                    <li><a href="#" class="hover:text-white">Home</a></li>
+                    <li><a href="#features" class="hover:text-white">Features</a></li>
+                    <li><a href="#testimonials" class="hover:text-white">Testimonials</a></li>
+                    <li><a href="#about" class="hover:text-white">About</a></li>
+                    <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                </ul>                </div>
+            <div>
+                <h3 class="font-semibold mb-4">Legal</h3>
+                <ul class="space-y-3 text-gray-400">                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-white">Cookie Policy</a></li>
+                </ul>                </div>
+            <div>
+                <h3 class="font-semibold mb-4">Follow Us</h3>
+                <div class="flex space-x-4">                        
+                    <!-- <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-custom transition-colors">                            <i class="fab fa-twitter text-lg"></i> -->
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-custom transition-colors">                            <i class="fab fa-linkedin-in text-lg"></i>
+                    </a>
+                    <!-- <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-custom transition-colors">                            <i class="fab fa-facebook-f text-lg"></i> -->
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-custom transition-colors">                            <i class="fab fa-instagram text-lg"></i>
+                    </a>
+                </div>
+            </div>            </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+            <p>&copy; 2025 Softnium. All rights reserved.</p>            </div>
+    </div>
+</footer>
+</body>
+</html>
