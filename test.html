@@ -61,15 +61,6 @@
               required
             />
           </div>
-
-          <!-- <div class="form-group">
-            <label for="loc">Gender:</label>
-            <select class="form-control" name="gender" id="gender" required>
-              <option value="" disabled selected hidden>Choose...</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
-          </div> -->
           <div class="form-group">
             <label for="loc">Message:</label>
             <textarea
@@ -79,17 +70,12 @@
               placeholder="Message"
               required
             ></textarea>
-          <!-- <div class="form-group form-check mt-2">
-            <input class="form-check-input" type="checkbox" id="age" />
-            <label class="form-check-label" for="age"
-              >Check if you are over 18 years old</label
-            >
-          </div> -->
-          <br>
+          </div>
           <div class="form-group form-check">
             <input class="form-check-input" type="checkbox" id="ex" required />
-            <label class="form-check-label" for="ex">
-              Confirm data 
+            <label class="form-check-label" for="ex"
+              >By checking this box I certify that I am agree with the data
+              terms and policies.
             </label>
           </div>
           <button type="submit" class="btn btn-primary btn-block">
@@ -100,20 +86,14 @@
     </div>
 
     <script>
-      const scriptURL =                       
+      const scriptURL =                        
       "https://script.google.com/macros/s/AKfycbw8r1-N3tmog_fVSWNf4Qaz-9qonGsdsoPd5t7i2vsORgh2nDNLXHLwgz40HbZREfA2pQ/exec";
       const form = document.forms["submit-to-google-sheet"];
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         var formData = new FormData(form);
         var ex = document.getElementById("ex").checked;
-        var age = document.getElementById("age").checked;
-
-        if (age) {
-          formData.append("age", "Yes");
-        } else {
-          formData.append("age", "No");
-        }
+        
         if (ex) {
           formData.append("ex", "Yes");
         } else {
