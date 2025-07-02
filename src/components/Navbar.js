@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="bg-white rounded-full px-6 py-2 flex items-center shadow-lg max-w-[90%] w-full md:w-[80%] justify-between">
         
         {/* Logo */}
-        <div className="font-bold text-lime-500 text-lg bg-lime-100 rounded-full px-4 py-1">
+        <div className="font-bold text-lg rounded-full px-4 py-1" style={{ backgroundColor: '#BBF246', color: '#192126' }}>
           SOFTNIUM
         </div>
 
