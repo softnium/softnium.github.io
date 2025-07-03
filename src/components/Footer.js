@@ -5,7 +5,7 @@ import twitter from '../assets/images/twitter.svg'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 text-gray-800 py-10 px-6 rounded-t-3xl">
+    <footer style={{ backgroundColor: '#192126' }} className="text-gray-100 py-10 px-6 rounded-t-3xl">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         
         {/* Brand */}
@@ -37,11 +37,11 @@ export default function Footer() {
           <div className="text-sm space-y-2">
             <div className="flex items-center gap-2">
               <span>📧</span>
-              <span>dumyemail@gmail.com</span>
+              <span>softnium@gmail.com</span>
             </div>
             <div className="flex items-center gap-2">
               <span>📞</span>
-              <span>+91 9579095949</span>
+              <span>+91 9137886169</span>
             </div>
           </div>
           {/* Social Icons */}
