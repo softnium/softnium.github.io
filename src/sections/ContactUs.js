@@ -50,7 +50,7 @@ export default function ContactUs() {
           </form>
         </div>
 
-        {/* Right: Icons & Buttons */}
+        {/* Right: Icons & Buttonss */}
         <div className="w-full md:w-1/2 text-center md:text-left">
           <div className="flex justify-center md:justify-start gap-4 mb-4">
             <img src={instagram} alt="Instagram" className="h-8 w-8" />
