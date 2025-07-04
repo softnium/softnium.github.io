@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.68b45b65.css",
+    "main.js": "/static/js/main.5a02a3c3.js",
+    "static/js/453.a6b54084.chunk.js": "/static/js/453.a6b54084.chunk.js",
+    "static/media/add_client.svg": "/static/media/add_client.49a49d6b8c824c64b7c1c358d91c5b6b.svg",
+    "static/media/automate.svg": "/static/media/automate.1813f3d8836afce270f7458382151986.svg",
+    "static/media/monitor_track.svg": "/static/media/monitor_track.7a84aaa213b7c162abf0566953f192d7.svg",
+    "static/media/card_client.svg": "/static/media/card_client.ac11ae5ed6b5db4cba173cfdda8cd56c.svg",
+    "static/media/hero_bg.svg": "/static/media/hero_bg.bb81a5c88c20801de189adc3769c70b4.svg",
+    "static/media/card_stats.svg": "/static/media/card_stats.05cbef9f4e91bd115cd58209ac37c8e0.svg",
+    "static/media/card_transactions.svg": "/static/media/card_transactions.d57a1f5c971f828f2baa82230c50dd74.svg",
+    "static/media/card_revenue.svg": "/static/media/card_revenue.59da292a845f0be9d46c653d1a26ef05.svg",
+    "static/media/instagram.svg": "/static/media/instagram.a2e1b7f05b89211a13641b48a3319a9d.svg",
+    "static/media/apple_store.png": "/static/media/apple_store.e1f9df4c13431e24ca43.png",
+    "static/media/play_store.svg": "/static/media/play_store.c376caa0adf2be9925032a6f7c5e0a22.svg",
+    "static/media/easy_ops.svg": "/static/media/easy_ops.38fab6b01fe73d07f5bf392654c228c3.svg",
+    "static/media/payment_reminder.svg": "/static/media/payment_reminder.6cc1ca3f74a843b32a8599a0b52cc198.svg",
+    "static/media/payment_tracking.svg": "/static/media/payment_tracking.eaa56b3f89e835e7f98152915c1e3009.svg",
+    "static/media/whatsapp.svg": "/static/media/whatsapp.5c72d91903f57b7f5d034467bc08a918.svg",
+    "static/media/twitter.svg": "/static/media/twitter.7c3d43859f9995912afced696237bc23.svg",
+    "static/media/report_gen.svg": "/static/media/report_gen.4fcaec4030955a19076cbfcdc40a475c.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.f1b1515e07e7027d8e259d2c657d8ab8.svg",
+    "index.html": "/index.html",
+    "main.68b45b65.css.map": "/static/css/main.68b45b65.css.map",
+    "main.5a02a3c3.js.map": "/static/js/main.5a02a3c3.js.map",
+    "453.a6b54084.chunk.js.map": "/static/js/453.a6b54084.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68b45b65.css",
+    "static/js/main.5a02a3c3.js"
+  ]
+}
