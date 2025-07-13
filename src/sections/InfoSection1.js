@@ -7,7 +7,7 @@ import icon5 from '../assets/images/whatsapp.svg'
 
 export default function InfoSection1() {
   return (
-    <section className="bg-[#10181F] text-white px-4 py-16 rounded-[2rem] max-w-7xl mx-auto overflow-hidden">
+    <section className="bg-[#10181F] text-white px-6 sm:px-10 py-16 mt-8 sm:mt-16 rounded-[2rem] max-w-7xl mx-4 sm:mx-auto overflow-hidden">
       <div className="grid md:grid-cols-2 gap-8 items-center">
         {/* Left Content */}
         <div className="space-y-6 px-4">
