@@ -7,47 +7,30 @@ import twitter from '../assets/images/twitter.svg' // for X logo
 
 export default function ContactUs() {
   return (
-    <section className="bg-[#12191F] text-white px-4 py-10 rounded-3xl max-w-[1100px] mx-auto my-12">
+    <section className="bg-[#12191F] text-white px-6 sm:px-10 py-10 rounded-3xl max-w-[1100px] mx-4 sm:mx-auto my-12">
       <div className="flex flex-col md:flex-row justify-between gap-8 items-center">
         
         {/* Left: Form */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 px-4">
           <h2 className="text-3xl font-bold mb-6">
             Contact <span className="text-lime-400">us</span>
           </h2>
-          <form className="space-y-4">
-            <input
-              type="text"
-              placeholder="Name"
-              className="w-full px-4 py-2 rounded-md text-black"
-            />
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              className="w-full px-4 py-2 rounded-md text-black"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="w-full px-4 py-2 rounded-md text-black"
-            />
-            <input
-              type="text"
-              placeholder="Location"
-              className="w-full px-4 py-2 rounded-md text-black"
-            />
-            <input
-              type="text"
-              placeholder="Business Type"
-              className="w-full px-4 py-2 rounded-md text-black"
-            />
+          <form
+            action="https://formspree.io/f/mnnzavng"  // 👈 Replace with your real Formspree endpoint
+            method="POST"
+            className="space-y-4">
+            <input type="text" name="name" placeholder="Name" required className="w-full px-4 py-2 rounded-md text-black" />
+            <input type="tel" name="phone" placeholder="Phone Number" required className="w-full px-4 py-2 rounded-md text-black" />
+            <input type="email" name="email" placeholder="Email" required className="w-full px-4 py-2 rounded-md text-black" />
+            <input type="text" name="location" placeholder="Location" className="w-full px-4 py-2 rounded-md text-black" />
+            <input type="text" name="business_type" placeholder="Business Type" className="w-full px-4 py-2 rounded-md text-black" />
             <button
               type="submit"
-              className="bg-lime-400 px-6 py-2 rounded-full font-semibold text-black hover:bg-lime-500"
-            >
+              className="bg-lime-400 px-6 py-2 rounded-full font-semibold text-black hover:bg-lime-500">
               Submit
             </button>
           </form>
+
         </div>
 
         {/* Right: Icons & Buttons */}
