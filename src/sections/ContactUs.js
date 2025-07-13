@@ -7,7 +7,7 @@ import twitter from '../assets/images/twitter.svg' // for X logo
 
 export default function ContactUs() {
   return (
-    <section className="bg-[#12191F] text-white px-6 sm:px-10 py-10 rounded-3xl max-w-[1100px] mx-4 sm:mx-auto my-12">
+    <section id="contact" className="bg-[#12191F] text-white px-6 sm:px-10 py-10 rounded-3xl max-w-[1100px] mx-4 sm:mx-auto my-12">
       <div className="flex flex-col md:flex-row justify-between gap-8 items-center">
         
         {/* Left: Form */}

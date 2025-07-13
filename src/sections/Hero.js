@@ -1,5 +1,6 @@
 import React from 'react'
 import bgImage from '../assets/images/hero_bg.svg'
+import bgImageMobile from '../assets/images/hero_mobile.svg'
 import card1 from '../assets/images/card_client.svg'
 import card2 from '../assets/images/card_revenue.svg'
 import card3 from '../assets/images/card_stats.svg'
@@ -9,8 +10,15 @@ export default function Hero() {
   return (
     <section
       className="relative bg-cover bg-center min-h-[90vh] flex items-center justify-center px-6 md:px-16"
-      style={{ backgroundImage: `url(${bgImage})` }}
+      style={{
+        backgroundImage: `url(${bgImageMobile})`,
+      }}
     >
+      <div
+        className="hidden md:block absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${bgImage})` }}
+      ></div>
+
       <div className="absolute inset-0 bg-black bg-opacity-20"></div>
 
       {/* Content */}
@@ -25,9 +33,11 @@ export default function Hero() {
             Automate tasks and streamline processes <br />
             with an easy-to-use platform
           </p>
-          <button className="bg-lime-400 text-black font-semibold px-6 py-2 rounded-full hover:bg-lime-500 transition-all">
-            Contact Us!
-          </button>
+          <a href="#contact">
+            <button className="bg-lime-400 text-black font-semibold px-6 py-2 rounded-full hover:bg-lime-500 transition-all">
+              Contact Us!
+            </button>
+          </a>
         </div>
 
         {/* Right Cards */}
